@@ -1,0 +1,1 @@
+import Link from "next/link";export default function DashboardLayout({children}:{children:React.ReactNode}){return <div className="admin-shell"><aside><Link href="/admin">Dashboard</Link><Link href="/admin/leads">Leads</Link><Link href="/admin/posts">Posts</Link><Link href="/admin/settings">Settings</Link><a href="/admin/logout">Logout</a></aside><main>{children}</main></div>}
