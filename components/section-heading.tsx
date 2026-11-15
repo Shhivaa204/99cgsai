@@ -1,0 +1,1 @@
+export function SectionHeading({eyebrow,title,description,center=false}:{eyebrow:string,title:string,description?:string,center?:boolean}){return <div className={`section-heading ${center?"center":""}`}><span className="eyebrow"><i/> {eyebrow}</span><h2>{title}</h2>{description&&<p>{description}</p>}</div>}
