@@ -1,0 +1,1 @@
+export default function Leads(){return <div className="admin-card"><h2>Leads</h2><p>Connect Supabase to view and manage enquiries.</p></div>}
