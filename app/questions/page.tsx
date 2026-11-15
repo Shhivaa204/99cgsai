@@ -1,1 +1,1 @@
-export default function Questions(){return <main className="container" style={{padding:"80px 0"}}><h1 style={{fontSize:40,fontWeight:800,marginBottom:16}}>Q&A</h1><p style={{color:"#aab5c5",fontSize:18}}>Common questions about working with 99CGS.</p></main>}
+import {QASection} from "@/components/qa-section";import {questions} from "@/lib/qa";export default function Questions(){return <main className="container" style={{padding:"80px 0"}}><h1 style={{fontSize:40,fontWeight:800,marginBottom:24}}>Questions & Answers</h1><QASection items={questions} /></main>}
