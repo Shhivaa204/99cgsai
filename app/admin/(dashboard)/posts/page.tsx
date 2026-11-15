@@ -1,0 +1,1 @@
+import {PostEditor} from "@/components/post-editor";export default function Posts(){return <><PostEditor/><div className="admin-card" style={{marginTop:20}}><h2>Articles</h2><p>Connect Supabase to manage articles.</p></div></>}
