@@ -1,0 +1,1 @@
+export default function Industries(){return <main className="container" style={{padding:"80px 0"}}><h1 style={{fontSize:40,fontWeight:800,marginBottom:16}}>Industries</h1><p style={{color:"#aab5c5",fontSize:18}}>Solutions for businesses that want smarter content, better visibility and more qualified leads.</p></main>}
