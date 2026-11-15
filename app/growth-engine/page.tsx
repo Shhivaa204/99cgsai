@@ -1,0 +1,1 @@
+export default function Growth(){return <main className="container" style={{padding:"80px 0"}}><h1 style={{fontSize:40,fontWeight:800,marginBottom:16}}>AI Growth Engine</h1><p style={{color:"#aab5c5",fontSize:18}}>Create, Grow and Scale as one continuous system.</p></main>}

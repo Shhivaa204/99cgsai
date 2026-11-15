@@ -1,0 +1,1 @@
+export default function Insights(){return <main className="container" style={{padding:"80px 0"}}><h1 style={{fontSize:40,fontWeight:800,marginBottom:16}}>Insights</h1><p style={{color:"#aab5c5",fontSize:18}}>Practical thinking on AI content, search visibility and growth systems.</p></main>}
