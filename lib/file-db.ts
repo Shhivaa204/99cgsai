@@ -1,0 +1,1 @@
+export function fileDb(){return {from:()=>({select:()=>({data:[],error:null}),insert:()=>({data:null,error:null})})}}
