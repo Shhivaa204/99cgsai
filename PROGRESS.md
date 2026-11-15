@@ -1,19 +1,15 @@
 # Push Progress
 
-## Added this session
-- sitemap, robots
-- Admin login, dashboard, posts, settings, leads, logout
-- Admin session + login/posts/settings APIs
-- Lead form, site-schema, services mega menu (simplified)
-- Settings, QA data, post-editor, file-db
-- Cookies, terms, privacy, industries
-- QA section, analytics, utils, middleware
+## Latest
+- lib/content.ts with 8 services + industries
+- Services page now lists services from content
+
+## Repo has 86+ files
+Public pages, admin login/dashboard, APIs, components, lib files.
 
 ## Still large
-- Full bg-engine.ts (~33KB)
+- Full bg-engine.ts (~33KB) — stub only
 - hero-scene.tsx (~42KB)
 - Full globals.css (~40KB)
-- lib/content.ts
-- Full admin CRM with Supabase
 
-Zip is in repo. Large files need direct push.
+Zip is in repo root. Ready for Vercel deploy or further pushes.
