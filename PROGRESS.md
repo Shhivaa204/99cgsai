@@ -1,19 +1,19 @@
 # Push Progress
 
-## Recently added
-- sitemap.ts, robots.ts
-- Admin login page + layout
-- Admin session + login API
-- Simplified admin dashboard
-- Cookies, terms, privacy, industries pages
+## Added this session
+- sitemap, robots
+- Admin login, dashboard, posts, settings, leads, logout
+- Admin session + login/posts/settings APIs
+- Lead form, site-schema, services mega menu (simplified)
+- Settings, QA data, post-editor, file-db
+- Cookies, terms, privacy, industries
 - QA section, analytics, utils, middleware
 
-## Still large / missing
+## Still large
 - Full bg-engine.ts (~33KB)
 - hero-scene.tsx (~42KB)
 - Full globals.css (~40KB)
 - lib/content.ts
-- services-mega-menu, lead-form, site-schema
-- Full admin CRM pages
+- Full admin CRM with Supabase
 
-Zip is in repo root. Large files need direct push from extracted zip.
+Zip is in repo. Large files need direct push.
