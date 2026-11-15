@@ -1,5 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import { AnimatedBg } from "@/components/animated-bg";
+import {SiteHeader} from "@/components/site-header";
+import {SiteFooter} from "@/components/site-footer";
+import {AnimatedBg} from "@/components/animated-bg";
 export const metadata:Metadata={title:"99CGS | AI-Powered Content & Growth Agency",description:"Create smarter content. Reach the right audience. Generate qualified leads."};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><AnimatedBg/><header className="site-header"><div className="container nav-wrap"><a href="/" className="brand"><span className="brand-word">99CGS</span><small>AI Agency</small></a><nav className="desktop-nav"><a href="/">Home</a><a href="/about">About</a><a href="/services">Services</a><a href="/growth-engine">Growth Engine</a><a href="/process">Process</a><a href="/insights">Insights</a><a href="/contact">Contact</a></nav><a href="/contact" className="button button-small">Get a Growth Strategy</a></div></header>{children}<footer className="footer"><div className="container">© 99CGS AI Agency • CREATE • GROW • SCALE</div></footer></body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><AnimatedBg/><SiteHeader/>{children}<SiteFooter/></body></html>}
