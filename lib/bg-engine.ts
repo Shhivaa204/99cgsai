@@ -15,9 +15,7 @@
  * a lower frame rate.
  */
 export function initSiteBackground(root: HTMLElement, opts: { gapMs?: number } = {}) {
-  // Full original engine is ~33KB. This is a working stub that preserves the interface.
-  // The complete fingerprint + circuit implementation is in the source zip.
-  const gapMs = opts.gapMs ?? 60000;
+  // Placeholder - full engine is large. Will be replaced with complete version.
   root.dataset.stage = "scene";
   return () => {};
 }
