@@ -1,0 +1,12 @@
+export type Service={slug:string,title:string,category:string,short:string,description:string};
+export const services:Service[]=[
+{slug:"ai-content-creation",title:"AI Content Creation",category:"Content & Creative",short:"Build a consistent content engine without compromising on quality or brand voice.",description:"Strategy-led content systems combining human direction, creative craft and AI-assisted production."},
+{slug:"ai-video-production",title:"AI Video Production",category:"Content & Creative",short:"Turn ideas, products and campaigns into compelling video experiences.",description:"Concept development and AI-assisted video production for explainers and brand communication."},
+{slug:"social-media-growth",title:"Social Media Growth",category:"Marketing & Growth",short:"Build a coherent brand presence across social channels.",description:"Channel strategy, content pillars and creative formats around your business objectives."},
+{slug:"performance-marketing",title:"Performance Marketing",category:"Marketing & Growth",short:"Make campaigns more accountable through structured testing.",description:"Campaign strategy and performance improvement across paid acquisition channels."},
+{slug:"seo-services",title:"SEO Services",category:"Search Visibility",short:"Build a technically sound website that search engines can understand.",description:"Technical, on-page and content SEO focused on organic discoverability."},
+{slug:"ai-automation",title:"AI Automation",category:"Systems & Technology",short:"Connect tools and workflows so repetitive work happens automatically.",description:"Practical automation for lead routing, content workflows and internal processes."},
+{slug:"lead-generation",title:"Lead Generation",category:"Systems & Technology",short:"Turn the right audience's interest into meaningful enquiries.",description:"Landing pages, forms and follow-up systems that capture and route leads."},
+{slug:"website-development",title:"Website Development",category:"Systems & Technology",short:"Fast, clear websites built for conversion and search.",description:"Modern websites with clear structure, strong CTAs and technical foundations."}
+];
+export const industries=["SaaS","E-commerce","Professional services","Local business","Creator brands","B2B"];
