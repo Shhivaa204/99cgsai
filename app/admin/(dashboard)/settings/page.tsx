@@ -1,0 +1,1 @@
+export default function Settings(){return <div className="admin-card"><h2>Business settings</h2><p>Connect Supabase to manage settings.</p></div>}
