@@ -9,21 +9,28 @@ export function AnimatedBg(){
     resize(); window.addEventListener("resize", resize);
     let t = 0;
     const loop = ()=>{
-      t += 0.008;
+      t += 0.006;
       ctx.clearRect(0,0,c.width,c.height);
-      // soft glowing orbs
-      const g1 = ctx.createRadialGradient(c.width*0.7, c.height*0.2, 0, c.width*0.7, c.height*0.2, 400);
-      g1.addColorStop(0, "rgba(54,214,176,0.18)"); g1.addColorStop(1, "transparent");
+      // large soft orbs
+      const g1 = ctx.createRadialGradient(c.width*0.72, c.height*0.18, 0, c.width*0.72, c.height*0.18, 420);
+      g1.addColorStop(0, "rgba(54,214,176,0.22)"); g1.addColorStop(1, "transparent");
       ctx.fillStyle = g1; ctx.fillRect(0,0,c.width,c.height);
-      const g2 = ctx.createRadialGradient(c.width*0.2, c.height*0.8, 0, c.width*0.2, c.height*0.8, 350);
-      g2.addColorStop(0, "rgba(85,185,232,0.12)"); g2.addColorStop(1, "transparent");
+      const g2 = ctx.createRadialGradient(c.width*0.18, c.height*0.82, 0, c.width*0.18, c.height*0.82, 380);
+      g2.addColorStop(0, "rgba(85,185,232,0.16)"); g2.addColorStop(1, "transparent");
       ctx.fillStyle = g2; ctx.fillRect(0,0,c.width,c.height);
-      // drifting circuit dots
-      ctx.fillStyle = "rgba(54,214,176,0.15)";
-      for(let i=0;i<40;i++){
-        const x = ((i*37 + t*20) % c.width);
-        const y = ((i*53 + t*12) % c.height);
-        ctx.beginPath(); ctx.arc(x,y,1.2,0,Math.PI*2); ctx.fill();
+      // drifting particles
+      ctx.fillStyle = "rgba(54,214,176,0.18)";
+      for(let i=0;i<55;i++){
+        const x = ((i*41 + t*28) % c.width);
+        const y = ((i*67 + t*15) % c.height);
+        ctx.beginPath(); ctx.arc(x,y,1.4,0,Math.PI*2); ctx.fill();
+      }
+      // faint circuit lines
+      ctx.strokeStyle = "rgba(54,214,176,0.08)";
+      ctx.lineWidth = 1;
+      for(let i=0;i<12;i++){
+        const y = (i*80 + t*20) % c.height;
+        ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(c.width,y+20); ctx.stroke();
       }
       requestAnimationFrame(loop);
     };
