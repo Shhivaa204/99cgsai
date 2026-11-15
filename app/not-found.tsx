@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <main className="not-found"><div className="eyebrow">PAGE NOT FOUND</div><h1>404</h1><h2>That page isn't in this growth system.</h2><p style={{color:"#aab5c5",margin:"15px 0 28px"}}>The link may be outdated or the page may have moved.</p><Link href="/" className="button">Back to homepage</Link></main>}
